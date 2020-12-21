@@ -2,17 +2,24 @@ import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Main from './pages/main';
 import LuckDraw from './pages/luckDraw';
+import Gift from './pages/gift';
 
 const Routes = [
     {
-        id: '/',
-        path: '/',
+        id: '/christmas',
+        path: '/christmas',
         component: Main,
         exact: true,
     },
     {
-        id: '/luckDraw',
-        path: '/luckDraw',
+        id: '/christmas/gift',
+        path: '/christmas/gift',
+        component: Gift,
+        exact: true,
+    },
+    {
+        id: '/christmas/luckDraw',
+        path: '/christmas/luckDraw',
         component: LuckDraw,
         exact: true,
     }

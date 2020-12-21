@@ -1,0 +1,105 @@
+.gift {
+    height: 100%;
+    .left{
+       float: left;
+        width: 400px;
+        border-right: 1px solid #e5e5e5;
+        height: 100%;
+        text-align: center;
+        padding-top: 200px;
+        button {
+            margin-top: 50px;
+            display: inline-block;
+                border-radius: 5px;
+                border: 1px solid #40a9ff;
+                width: 140px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                background-color: #40a9ff;
+                color: #fff;
+                font-weight: bold;
+                font-size: 18px;
+                outline: none;
+        }
+        
+    }
+    .right{
+        margin-left: 400px;
+        padding-left: 20px;
+        padding-top: 20px;
+        height: 100%;
+        ul{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 100%;
+        }
+        li{
+            display: inline-block;
+            width: 200px;
+            margin: 0 10px 20px 0;
+            span{
+                display: inline-block;
+                border-radius: 5px;
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                background-color: #40a9ff;
+                color: #fff;
+                font-weight: bold;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+#webxiu-tags {position:relative; width:326px; height:326px;overflow: hidden;margin: 0 auto;}
+#webxiu-tags a {position:absolute; white-space:nowrap;top:0px; left:0px; font-family: Microsoft YaHei;  font-weight:bold; text-decoration:none; padding: 3px 6px; }
+#webxiu-tags a.color-0,#webxiu-tags a.color-1{
+  color: #ee1166
+}
+#webxiu-tags a.color-2,#webxiu-tags a.color-20{
+  color: #b714e0
+}
+#webxiu-tags a.color-3,#webxiu-tags a.color-19{
+  color: #46b0ff
+}
+#webxiu-tags a.color-4,#webxiu-tags a.color-18{
+  color: #00bbdd
+}
+#webxiu-tags a.color-5,#webxiu-tags a.color-17{
+  color: #69c869
+}
+#webxiu-tags a.color-6,#webxiu-tags a.color-16{
+  color: #3da83d
+}
+#webxiu-tags a.color-7,#webxiu-tags a.color-15{
+  color: #ff5500
+}
+#webxiu-tags a.color-8{
+  color: #f13f84
+}
+#webxiu-tags a.color-9{
+  color: #008cf4
+}
+#webxiu-tags a.color-10{
+  color: #00b7a3
+}
+#webxiu-tags a.color-11{
+    color: #3da83d
+  }
+  #webxiu-tags a.color-12{
+    color: #ff5500
+  }
+  #webxiu-tags a.color-13{
+    color: #f13f84
+  }
+  #webxiu-tags a.color-14{
+    color: #008cf4
+  }
+  #webxiu-tags a.color-15{
+    color: #00b7a3
+  }
+#webxiu-tags a:hover { color:#FF0000; letter-spacing:2px;}
