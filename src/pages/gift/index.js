@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Date from '../../components/Date'
 
 import './style.scss';
 
@@ -242,8 +243,8 @@ class Main extends Component {
           '沈均行',
           '穆萌',
           '葛强强',
-          '田健',
           '胡浩',
+          '田健',
           '顾威',
           '石娜娜',
           '黎军霞',
@@ -260,6 +261,7 @@ class Main extends Component {
           '别业胜',
           '陈文超'
         ],
+        show: false,
         result: []
       }
     }
@@ -275,6 +277,7 @@ class Main extends Component {
         let hasReceive = []
         let length = userList.length
         let sendUser
+        let count = 1
         const _self = this
 
         function send(index) {
@@ -306,11 +309,22 @@ class Main extends Component {
             })
         }
 
-        start()  
-    }
-
-    handleChange = (event) => {
-        this.setState({username: event.target.value});
+        _self.setState({
+            show: true
+        })
+        let timer = setInterval(() =>{
+            count++
+            if (count > 140){
+                clearInterval(timer)
+                count = 1
+                _self.setState({
+                    show: false
+                })
+            }else {
+                start()
+            }
+            
+        }, 100)
     }
 
     componentDidMount() {
@@ -326,7 +340,7 @@ class Main extends Component {
     }
 
     render () {
-        const {users, result} = this.state
+        const {users, result, show} = this.state
       return (
         <div className="gift">
             <div className="left">
@@ -340,7 +354,9 @@ class Main extends Component {
                 <button onClick={this.startHandle}>开始随机互赠</button>
             </div>
             <div className="right">
-                
+                {
+                    show && <Date />
+                }
                 {
                     result.length > 0 &&
                     <ul>
