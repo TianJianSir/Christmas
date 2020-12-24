@@ -44,7 +44,7 @@
     <script>
       document.body.addEventListener('click', () => {
             let a = document.querySelector('audio')
-            if (a.paused) {
+            if (a && a.paused) {
                 a.currentTime = 10
                 a.play()
             }

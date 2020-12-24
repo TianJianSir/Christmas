@@ -259,7 +259,8 @@ class Main extends Component {
           '孙少辉',
           '张磊',
           '别业胜',
-          '陈文超'
+          '陈文超',
+          '田元'
         ],
         show: false,
         result: []
