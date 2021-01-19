@@ -6,11 +6,6 @@ import './style.scss';
 function Main() {
     return (
       <div className="main">
-        {/* <header>
-            <p className="animated bounceInLeft"><Link to='/christmas/gift'>互赠礼物</Link></p>
-            <p className="animated bounceInRight"><Link to='/christmas/luckDraw'>抽奖</Link></p>
-        </header> */}
-
         <div className="main-wrapper">
           <div className="tree-container">
             <div className="star"></div>
@@ -669,7 +664,7 @@ function Main() {
             </div>
           </div>
           <div className="text-container">
-            <h2 className="happy"><Link to='/christmas/gift'>企数采 Merry Christmas</Link></h2>
+            <h2 className="happy"><Link to='/newYear/gift'>企数采 Happy New Year</Link></h2>
           </div>
         </div>
       </div>

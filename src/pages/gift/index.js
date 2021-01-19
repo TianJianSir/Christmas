@@ -352,7 +352,7 @@ class Main extends Component {
                         )
                     }
                 </div>
-                <button onClick={this.startHandle}>开始随机互赠</button>
+                <button onClick={this.startHandle}>开启盲盒抽取</button>
             </div>
             <div className="right">
                 {

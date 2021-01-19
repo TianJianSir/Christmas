@@ -28,7 +28,6 @@
     <title></title>
   </head>
   <body>
-    <audio src="%PUBLIC_URL%/Christmas.mp3"></audio>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -41,14 +40,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script>
-      document.body.addEventListener('click', () => {
-            let a = document.querySelector('audio')
-            if (a && a.paused) {
-                a.currentTime = 10
-                a.play()
-            }
-        });
-    </script>
   </body>
 </html>

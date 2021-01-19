@@ -6,20 +6,20 @@ import Gift from './pages/gift';
 
 const Routes = [
     {
-        id: '/christmas',
-        path: '/christmas',
+        id: '/newYear',
+        path: '/newYear',
         component: Main,
         exact: true,
     },
     {
-        id: '/christmas/gift',
-        path: '/christmas/gift',
+        id: '/newYear/gift',
+        path: '/newYear/gift',
         component: Gift,
         exact: true,
     },
     {
-        id: '/christmas/luckDraw',
-        path: '/christmas/luckDraw',
+        id: '/newYear/luckDraw',
+        path: '/newYear/luckDraw',
         component: LuckDraw,
         exact: true,
     }

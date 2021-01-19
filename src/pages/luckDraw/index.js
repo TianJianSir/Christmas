@@ -44,8 +44,8 @@ class Main extends Component {
       return (
         <div className="App">
           <header className="App-header">
-            <p><Link to='/christmas/gift'>互赠礼物</Link></p>
-            <p><Link to='/christmas/luckDraw'>抽奖</Link></p>
+            <p><Link to='/newYear/gift'>互赠礼物</Link></p>
+            <p><Link to='/newYear/luckDraw'>抽奖</Link></p>
           </header>
         </div>
       );
